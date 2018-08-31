@@ -6,8 +6,8 @@ services:
     ports:
       - "8080:8080" # UI port
       - "7077:7077"
-    environment:
-      - INIT_DAEMON_STEP=setup_spark
+    networks: 
+      - spork
   spark-worker-1:
     image: stacktraceyo/spork-worker
     container_name: spark-worker-1
@@ -17,3 +17,8 @@ services:
       - "8081:8081" # UI port
     environment:
       - "SPARK_MASTER=spark://spark-master:7077"
+    networks: 
+      - spork
+networks: 
+  spork:
+    
