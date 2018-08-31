@@ -1,9 +1,6 @@
 #!/bin/bash
 # cleanup dangling
 # todo make a better script
-docker ps -aq --no-trunc -f status=exited | xargs docker rm
-docker images -q --filter dangling=true | xargs docker rmi
-
 cd docker/base
 docker build -t stacktraceyo/spork-base:latest .
 cd ../master
