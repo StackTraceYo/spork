@@ -21,7 +21,7 @@ docker run \
 -e SPARK_APPLICATION_JAR_NAME=${JAR_NAME} \
 # main class
 -e SPARK_APPLICATION_MAIN_CLASS=${MAIN} \
-#location of jar (in docker image)
+# location of jar in docker image
 -e SPARK_APPLICATION_JAR_LOCATION=${JAR_LOC} \
 # local mode
 -e SPARK_MASTER=${SPARK_MASTER} \

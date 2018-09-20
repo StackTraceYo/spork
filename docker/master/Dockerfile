@@ -1,4 +1,4 @@
-FROM stacktraceyo/spork-base:latest
+FROM stacktraceyo/spark-base:latest
 
 COPY master.sh /
 

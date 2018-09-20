@@ -1,4 +1,4 @@
-FROM stacktraceyo/spork-submit:latest
+FROM stacktraceyo/spark-submit:latest
 
 
 ENV SPARK_APPLICATION_PYTHON_LOCATION ''

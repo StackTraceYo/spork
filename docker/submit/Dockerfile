@@ -1,4 +1,4 @@
-FROM stacktraceyo/spork-base:latest
+FROM stacktraceyo/spark-base:latest
 
 ENV SPARK_MASTER_NAME spark-master
 ENV SPARK_APPLICATION_JAR_LOCATION /
